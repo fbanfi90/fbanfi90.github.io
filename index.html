@@ -40,7 +40,7 @@
             <a href="#contact">Contact</a>
           </nav>
           <div class="hidden md:flex items-center gap-3">
-            <a href="downloads/documents/cv-fabio-banfi.pdf" class="px-3 py-1.5 border rounded-md text-sm">Download CV</a>
+            <a href="downloads/documents/cv-fabio-banfi.pdf" class="px-3 py-1.5 border rounded-md text-sm whitespace-nowrap">Download CV</a>
             <a href="https://linkedin.com/in/fbanfi90" target="_blank" class="text-sm">LinkedIn</a>
             <a href="https://github.com/fbanfi90" target="_blank" class="text-sm">GitHub</a>
           </div>
@@ -93,27 +93,24 @@
       <section id="projects" class="mt-16">
         <h2 class="text-2xl font-semibold">Projects</h2>
         <div class="mt-6 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-          <article class="bg-slate-800 border border-slate-700 rounded-xl p-5">
+          <article class="bg-slate-800 border border-slate-700 rounded-xl p-5 flex flex-col">
             <h3 class="text-lg font-semibold"><a href="https://zkGrid.net">zkGrid</a></h3>
-            <p class="mt-2 text-sm text-slate-300">
+            <p class="mt-2 text-sm text-slate-300 flex-grow">
               This puzzle game uses <a href="https://en.wikipedia.org/wiki/ZkSNARK">zk-SNARKs</a> to enable you to prove in <a href="https://en.wikipedia.org/wiki/Zero-knowledge_proof">zero-knowledge</a> that you found the empty cell in a dotted grid, that is, without revealing its location.
               The proof is generated with <a href="https://docs.circom.io/">Circom</a> and <a href="https://github.com/iden3/snarkjs">snarkjs</a> using the <a href="https://eprint.iacr.org/2016/260">Groth16</a> proving system and is displayed as a QR code.
               Open the app on another device and select <b>Verify</b> to validate QR proofs.
               Zero-knowledge guarantees that the data in the QR code contains no information about the empty cell location.
-            <br />
-            <br />
-            <a href="https://github.com/fbanfi90/zkGrid">Get the code!</a>
             </p>
+            <a href="https://github.com/fbanfi90/zkGrid" class="mt-4">Get the code!</a>
           </article>
-          <article class="bg-slate-800 border border-slate-700 rounded-xl p-5">
+          <article class="bg-slate-800 border border-slate-700 rounded-xl p-5 flex flex-col">
             <h3 class="text-lg font-semibold"><a href="https://jmny6-nqaaa-aaaam-qdkbq-cai.icp0.io/">Repartee</a></h3>
-            <p class="mt-2 text-sm text-slate-300">
+            <p class="mt-2 text-sm text-slate-300 flex-grow">
               A simple word association game deployed as a <a href='https://en.wikipedia.org/wiki/Decentralized_application'>dapp</a> on the <a href='https://internetcomputer.org/'>Internet Computer</a>, where you guess a word that matches a given prompt and see how many others think like you.
               There is only one global instance of the game, and its state is shared among all players.
               Find common connections, or add new word pairs to expand the game and challenge others!
-            <br />
-            <br />
-            <a href="https://github.com/fbanfi90/repartee">Get the code!</a>
+            </p>
+            <a href="https://github.com/fbanfi90/repartee" class="mt-4">Get the code!</a>
           </article>
         </div>
       </section>
@@ -199,6 +196,3 @@
     </main>
   </body>
 </html>
-
-
-
