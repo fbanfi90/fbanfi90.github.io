@@ -1,0 +1,29 @@
+{
+  "@context": [
+    "https://www.w3.org/ns/did/v1",
+    "https://w3id.org/security/suites/jws-2020/v1"
+  ],
+  "id": "did:web:fabiobanfi.com",
+  "verificationMethod": [
+    {
+      "id": "did:web:fabiobanfi.com#owner",
+      "type": "JsonWebKey2020",
+      "controller": "did:web:fabiobanfi.com",
+      "publicKeyJwk": {
+        "kty": "EC",
+        "crv": "secp256k1",
+        "x": "ad1d5bb3cccae29c8bdf3df0d627f1414f7a5305ea2e10d858692237324f7934",
+        "y": "60261316b63c87588791278ee6d9e27e5b7acf3ea5c32b8a8269a1758cc5761b"
+      }
+    }
+  ],
+  "authentication": [
+    "did:web:fabiobanfi.com#owner"
+  ],
+  "assertionMethod": [
+    "did:web:fabiobanfi.com#owner"
+  ],
+  "keyAgreement": [
+    "did:web:fabiobanfi.com#owner"
+  ]
+}
